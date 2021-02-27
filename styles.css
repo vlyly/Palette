@@ -1,0 +1,110 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf4f4;
+  height: 100vh;
+}
+
+select:focus {
+  outline: none;
+}
+
+.canvas {
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(202, 201, 201, 0.1), 0 1px 3px rgb(196, 196, 196);
+  cursor: url(paint-brush-solid.cur) 0 16, auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.controlButton,
+.controls_range {
+  all: unset;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid rgba(129, 129, 129, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(202, 201, 201, 0.1), 0 1px 3px rgb(196, 196, 196);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase; /*버튼 안의 문자를 대문자로 바꿉니다*/
+  cursor: pointer;
+}
+
+.controls_range label {
+  font-weight: 400;
+}
+
+.controlButton {
+  width: 80px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.controlButton:active {
+  transform: scale(0.98);
+}
+
+.smallButton {
+  width: 40px;
+}
+
+.button_disabled {
+  background-color: rgb(211, 211, 211);
+  color: rgb(128, 128, 128);
+  cursor: default;
+}
+
+.controls_range {
+  padding: 8px 20px;
+  width: 130px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.colorConcept {
+  margin-top: 20px;
+}
+
+.colorConcept select {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.controls_colorPackage {
+  margin: 20px 0;
+}
+
+.controls_colorPackage li {
+  display: flex;
+}
+
+.controls_color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(202, 201, 201, 0.1), 0 1px 3px rgb(196, 196, 196);
+}
+
+.cursor_paint {
+  cursor: url(fill-solid.cur) 2 2, auto;
+}
+
+.cursor_brush {
+  cursor: url(paint-brush-solid.cur) 0 16, auto;
+}
