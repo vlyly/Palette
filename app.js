@@ -217,4 +217,4 @@ colorConceptOp.addEventListener("change", handleDisplay); //colorConceptOp의 �
 Array.from(colors).forEach((color) =>
   color.addEventListener("click", handleColorClick)
 );
-//colors 객체를 배열로 만들고 배열의 각각의 요소에 대해 이벤트를 삽입합니다. 각각의 요소를 클릭할 때 마다 handleColorClick 함수 실행
+//colors 유사 배열 객체에 forEach 메소드를 사용해 각각의 요소에 대해 이벤트를 삽입합니다. 각각의 요소를 클릭할 때 마다 handleColorClick 함수 실행
