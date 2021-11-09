@@ -1,5 +1,5 @@
 <h2>🎨그림판🎨</h2>
-캔버스에 그림을 그리자!
+캔버스에 그림을 그리자!<strong>(Internet Explorer 미지원)</strong>
 
 <h3>목차</h3>
 l. 목표<br>
